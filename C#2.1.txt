@@ -1,0 +1,29 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+      Console.WriteLine("Введите первое число:");
+      int x = int.Parse(Console.ReadLine());
+       Console.WriteLine("Введите второе число:");
+      int y = int.Parse(Console.ReadLine());
+      int k=0;
+      int l=x;
+      while(l>0){
+        k++;
+        l/=10;
+      }
+
+      for(int i=0;i<k;i++){
+        int c=y;
+        int a=x;
+        a%=10;
+        for(int j=0;j<k;j++){
+          int b=c;
+          b%=10;
+          if(a==b){Console.Write(a+" ");}
+          c/=10;
+        }
+        x/=10;
+      }
+    }
+}
