@@ -8,9 +8,15 @@ public class MainClass
  int n = int.Parse(Console.ReadLine()); 
  int a=12; 
  int b=5; 
- for(int i=1;i<=n;i++){ 
- a=a+1; 
- b=b+5; 
+ for(int i=1;i<=n;i++){
+   a=a+1; 
+   b=b+5;
+   if(a>23){
+     a=0;
+   }
+    if(b>60){
+      b=0;
+    }
       }
  Console.WriteLine(a+":"+b); 
     }
