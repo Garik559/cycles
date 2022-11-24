@@ -1,17 +1,17 @@
-using System;
+using System; 
 
-public class MainClass
+public class MainClass 
 {
-    public static void Main()
+ public static void Main() 
     {
-      Console.WriteLine("Введите количество щелчков: ");
-      int n = int.Parse(Console.ReadLine());
-      int a=12;
-      int b=0;
-      for(int i=1;i<=n;i++){
-        a=a+1;
-        b=b+5;
+ Console.WriteLine("Введите количество щелчков: "); 
+ int n = int.Parse(Console.ReadLine()); 
+ int a=12; 
+ int b=5; 
+ for(int i=1;i<=n;i++){ 
+ a=a+1; 
+ b=b+5; 
       }
-       Console.WriteLine(a+":"+b);
+ Console.WriteLine(a+":"+b); 
     }
 }
